@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/welcomebg"
+    android:orientation="vertical"
+    tools:context="com.nextix.gameproject.Welcome$PlaceholderFragment" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_gravity="center_horizontal|right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="3dp"
+        android:onClick="startGame"
+        android:text="@string/start"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button1"
+        android:layout_gravity="center_horizontal|right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/help"
+        android:onClick="helpGame"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button3"
+        android:layout_gravity="center_horizontal|right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="3dp"
+        android:onClick="endGame"
+        android:text="@string/exit"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="76dp"
+        android:text="@string/hscore"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/hs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_toRightOf="@+id/textView1"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
